@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Globe from "./components/Globe";
+import axios from "axios";
 
-function App() {
+const App = () => {
+  const [iss, setIss] = useState([]);
+
+  useEffect(() => {
+    const getIssPosition = async () => await getIss();
+    getIssPosition();
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(async () => await getIss(), 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const getIss = async () => {
+    const {
+      data: { iss_position },
+    } = await axios.get("http://api.open-notify.org/iss-now.json");
+
+    setIss([iss_position.latitude, iss_position.longitude]);
+  };
+
+  // console.log(iss);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Globe iss={iss} />
     </div>
   );
-}
+};
 
 export default App;
