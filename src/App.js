@@ -17,10 +17,10 @@ const App = () => {
 
   const getIss = async () => {
     const {
-      data: { iss_position },
-    } = await axios.get("http://api.open-notify.org/iss-now.json");
+      data: { latitude, longitude },
+    } = await axios.get("https://api.wheretheiss.at/v1/satellites/25544");
 
-    setIss([iss_position.latitude, iss_position.longitude]);
+    setIss([latitude, longitude]);
   };
 
   // console.log(iss);
