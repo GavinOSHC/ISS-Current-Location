@@ -1,6 +1,6 @@
 # This project allow you to see the current location of the International Space Station.
 
-## Create in React
+## Created in React
 
 ### To Run - git clone
 
