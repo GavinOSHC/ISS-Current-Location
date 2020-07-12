@@ -1,0 +1,1 @@
+{"version":3,"sources":["map.css"],"names":[],"mappings":"AAAA,KACE,OAAQ,CACR,QAAS,CACT,8BAAgC,CAChC,iBAAkB,CAClB,UACF","file":"main.925ce557.chunk.css","sourcesContent":[".map {\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  position: absolute;\r\n  width: 64vw;\r\n}\r\n"]}

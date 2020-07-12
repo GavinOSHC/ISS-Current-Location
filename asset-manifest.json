@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ISS-Current-Location/static/css/main.925ce557.chunk.css",
+    "main.js": "/ISS-Current-Location/static/js/main.7fab3098.chunk.js",
+    "main.js.map": "/ISS-Current-Location/static/js/main.7fab3098.chunk.js.map",
+    "runtime-main.js": "/ISS-Current-Location/static/js/runtime-main.2f8dd297.js",
+    "runtime-main.js.map": "/ISS-Current-Location/static/js/runtime-main.2f8dd297.js.map",
+    "static/js/2.f6d27438.chunk.js": "/ISS-Current-Location/static/js/2.f6d27438.chunk.js",
+    "static/js/2.f6d27438.chunk.js.map": "/ISS-Current-Location/static/js/2.f6d27438.chunk.js.map",
+    "index.html": "/ISS-Current-Location/index.html",
+    "precache-manifest.83b7f1f390da3e679ecf4219458e4135.js": "/ISS-Current-Location/precache-manifest.83b7f1f390da3e679ecf4219458e4135.js",
+    "service-worker.js": "/ISS-Current-Location/service-worker.js",
+    "static/css/main.925ce557.chunk.css.map": "/ISS-Current-Location/static/css/main.925ce557.chunk.css.map",
+    "static/js/2.f6d27438.chunk.js.LICENSE.txt": "/ISS-Current-Location/static/js/2.f6d27438.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f8dd297.js",
+    "static/js/2.f6d27438.chunk.js",
+    "static/css/main.925ce557.chunk.css",
+    "static/js/main.7fab3098.chunk.js"
+  ]
+}
